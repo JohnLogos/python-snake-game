@@ -127,7 +127,7 @@ def draw_score(display, score):
     pygame.display.update()
 
 def draw_endscreen(display, width, height, snake_length):
-    display.fill((0, 0, 0))
+    display.fill(black)
     font_style = pygame.font.SysFont("arialblack", 25)
     end_msg = font_style.render("Game Over: Press C-Play Again or Q-Quit", True, white)
     display.blit(end_msg, [int(width / 8), int(height / 2)])
